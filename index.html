@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="prefetch" href="files" />
+    <title>罕见盒</title>
+    <style>
+        html {
+            background-color: #f2f4f1;
+        }
+
+        div {
+            background-color: white;
+            border-radius: 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+            padding: 5px 30px 5px 30px;
+        }
+
+        button {
+            background-color: #a4adce;
+            color: white;
+            font-size: 18px;
+            padding: 20px 35px 20px 35px;
+            border-color: #a4adce;
+            margin-right: 10px;
+            width: 92px;
+            height: 68px;
+        }
+
+        .bb {
+            width: 416px;
+            height: 68px;
+        }
+
+        .by1 {
+            background-image: linear-gradient(to right, #c8feda, #f77d7d);
+            padding: 1px 10px 1px 10px;
+            color: #00aaff;
+        }
+
+        .by2 {
+            background-image: linear-gradient(#eacafb, #ccfbdc);
+            padding: 1px 10px 1px 10px;
+            color: #00aaff;
+        }
+
+        .by3 {
+            background-image: linear-gradient(to right, #95e9c2, #deebba);
+            padding: 1px 10px 1px 10px;
+            color: #00aaff;
+        }
+
+        .by4 {
+            background-image: linear-gradient(to right, #eacafb, #dcbc60);
+            padding: 1px 10px 1px 10px;
+            color: #00aaff;
+        }
+
+        #me {
+            display: none;
+        }
+    </style>
+    <script>
+        var httpRequest = new XMLHttpRequest();
+        httpRequest.open('GET', 'http://api.darock.top/total/hjboxwebMain', true);
+        httpRequest.send();
+    </script>
+</head>
+<body>
+    <p>
+        <span style="font-size: 20px">罕见盒网页版v2.1</span>
+        <button type="button" style="padding: 0px 5px 0px 5px; background-image: linear-gradient(to right, #c8feda, #f77d7d);font-size: 22px;" onclick="support()">$</button>
+    </p>
+    <p>hanjian music box web edition</p>
+    <p style="text-align: center;">
+        <img src="files/pic1.jpg" width="432" height="192" alt="" onclick="me()" />
+    </p>
+    <br />
+    <div style="text-align: center;">
+        <p style="font-size: 20px">
+            稀有!
+        </p>
+        <p>
+            <button type="button" onclick="shui()">谁</button>
+            <button type="button" onclick="han()">罕</button>
+            <button type="button" onclick="jian()">见</button>
+            <button type="button" onclick="aa()">啊</button>
+        </p>
+        <p>
+            <button type="button" onclick="ma()">骂</button>
+            <button type="button" onclick="shui2()">谁</button>
+            <button type="button" onclick="han2()">罕</button>
+            <button type="button" onclick="jian2()">见</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 180px 20px 180px;" class="bb" onclick="xiqi()">(吸气)</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 17px 20px 17px;" onclick="ma3()">骂！！</button>
+            <button type="button" style="padding: 20px 17px 20px 17px;" onclick="shui3()">谁！！</button>
+            <button type="button" style="padding: 20px 17px 20px 17px;" onclick="han3()">罕！！</button>
+            <button type="button" style="padding: 20px 17px 20px 17px;" onclick="jian3()">见！！</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="wthjda()">我挺罕见的啊</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="wqshj()">我确实罕见</button>
+        </p>
+        <p style="font-size: 20px">藏话</p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="nzmszha()">你怎么说藏话啊</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="wsnd()">我是你爹</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="wcnm()">我焯你妈</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="cnm()">操你妈</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="sb()">傻逼</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="qsb()">去死吧</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="wcnmcd()">我焯你妈(声音略带颤抖)</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="nddbrslsb()">你爹都不认识了是吧</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="shxlz()">丝滑小连招</button>
+        </p>
+        <p style="font-size: 20px">狗叫</p>
+        <p>
+            <button type="button" style="padding: 10px 0px 10px 0px;" class="bb" onclick="wsg()">我是狗</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 10px 0px 10px 0px;" class="bb" onclick="sdsmjbh()">&*%"#…:,?!_@*@<br />(说的什么鸡巴话，我听不懂)</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="xgdy()">(小狗低吟)</button>
+            <button type="button" style="padding: 20px 20px 20px 20px;" onclick="gj1()">(狗叫)</button>
+            <button type="button" style="padding: 20px 20px 20px 20px;" onclick="gj2()">(狗叫)</button>
+            <button type="button" style="padding: 20px 30px 20px 30px;" onclick="xx()">(笑)</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 20px 20px 20px;" onclick="gj3()">(狗叫)</button>
+            <button type="button" style="padding: 20px 20px 20px 20px;" onclick="gj3()">(狗叫)</button>
+            <button type="button" style="padding: 20px 20px 20px 20px;" onclick="gj4()">(狗叫)</button>
+            <button type="button" style="padding: 20px 20px 20px 20px;" onclick="gj5()">(狗叫)</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 20px 20px 20px;" onclick="gj6()">(狗叫)</button>
+            <button type="button" style="padding: 20px 20px 20px 20px;" onclick="gj7()">(狗叫)</button>
+            <button type="button" style="padding: 20px 20px 20px 20px;" onclick="gj8()">(狗叫)</button>
+            <button type="button" style="padding: 20px 20px 20px 20px;" onclick="gj9()">(狗叫)</button>
+        </p>
+        <p style="font-size: 20px">
+            祖国の话
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 20px 20px 20px;" onclick="jma()">9敏啊</button>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="hta()">hentai啊</button>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="apsma()">啊凭什么啊</button>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="njbsa()">你鸡巴谁啊~</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="bbzl()">绷不住了</button>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="fla()">非礼啊</button>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="nta()">男铜啊</button>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="dddy()">大大滴有</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="hhyqlbs()">赫赫一群老不死</button>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="odbq()">哦，对不起</button>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="wgbhmmb()">我该不会没马吧</button>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="nwmn()">那我妈呢？</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="njbsawc()">你鸡巴谁呀我草</button>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="nsbsymb()">你是不是有毛病</button>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="dxlsmjb()">东雪莲什么鸡巴</button>
+            <button type="button" style="padding: 20px 0px 20px 0px;" onclick="hhnh()">hihi~你好~</button>
+        </p>
+        <p style="font-size: 20px">发癫时刻</p>
+        <p style="font-size: 20px">&#x26A0注意音量&#x26A0</p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="aaanhfaaa()">啊啊啊啊啊！你好烦啊啊啊啊啊啊啊！</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="wdxl()">我东雪莲！！！！！！！</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="kbjx()">恐怖尖笑</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="lllxgy()">莲莲练习高音</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="nzcyd()">你正常一点</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="wwwbxblwww()">呜呜呜呜呜，不想播啦呜呜呜呜呜</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="wwwwwww()">呜呜呜呜呜呜呜呜呜呜呜呜呜污污污污</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="wwwwwwx()">呜呜呜呜呜呜呜呜：！+@：……+(_/"<({ /@":…_@"}>")</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="xxl()">笑嘻了</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="wbsq()">我不生气</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="wwwhorror()">笑起来这么恐怖的主播我真没见过几个&#x1F628</button>
+        </p>
+        <p style="font-size: 20px">東の人生计划</p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="wmtyqs()">我明天要去死</button>
+        </p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="whtyjh()">我后天要结婚</button>
+        </p>
+        <p style="font-size: 20px">嘲讽</p>
+        <p>
+            <button type="button" style="padding: 20px 0px 20px 0px;" class="bb" onclick="nmdndyzzkx()">你们低能的样子真可笑</button>
+        </p>
+        <div style="background-color: #f2f4f1;">
+            <p style="font-size: 20px"><strong>使用帮助</strong></p>
+            <p>莲宝&#x1F970&#x1F970&#x1F970&#x1F970我的莲宝&#x1F970&#x1F970&#x1F970&#x1F970&#x1F970</p>
+            <p>正在开发中</p>
+            <p>感谢大家支持</p>
+            <br />
+            <p>音频资源来源于网络收集，网页仅限用于交流学习，请勿用于任何非法用途！</p>
+        </div>
+        <br />
+        <div style="background-color: #f2f4f1;">
+            <p style="font-size: 20px"><strong>已知问题</strong></p>
+            <p>无</p>
+            <br />
+            <p>如发现问题，可向meiquappleidw@163.com发送邮件进行反馈</p>
+        </div>
+        <br />
+        <div style="background-color: #f2f4f1;">
+            <p style="font-size: 20px"><strong>相较于上个版本的变化</strong></p>
+            <p>1.进行了一些微调</p>
+        </div>
+        <br />
+        <div style="background-color: #f6807f;">
+            <p style="font-size: 20px"><strong>最新消息</strong></p>
+            <p>目前无</p>
+        </div>
+        <br />
+        <div style="background-color: #f2f4f1;" id="me">
+            <p>莲宝&#x1F62D&#x1F62D&#x1F62D&#x1F62D&#x1F62D我的莲宝&#x1F62D&#x1F62D&#x1F62D&#x1F62D&#x1F62D</p>
+            <p>没有你，我可怎么活啊莲宝&#x1F62D&#x1F62D&#x1F62D&#x1F62D</p>
+        </div>
+        <br />
+        <div class="by1">
+            <p style="text-align:center;">
+                <a href="https://space.bilibili.com/2121218921">by_wi9ya6(安卓App端作者)</a>
+            </p>
+        </div>
+        <br />
+        <div class="by4">
+            <p style="text-align:center;">
+                <a href="https://space.bilibili.com/356891781">by_WindowsMEMZ(网页端作者)</a>
+            </p>
+        </div>
+        <br />
+        <div class="by2">
+            <p style="text-align:center;">
+                by_噗了个呵(音频截取)
+            </p>
+        </div>
+        <br />
+        <div class="by3">
+            <p style="text-align:center;">
+                by_不会笑的野良猫(赞助)
+            </p>
+        </div>
+    </div>
+    <p style="text-align:center;">
+        <a href="https://icp.gov.moe/?keyword=20220996" target="_blank" id="beian">萌ICP备20220996号</a>
+    </p>
+    <script>
+        function shui() {
+            var m = new Audio("files/hj/11.aac");
+            m.play();
+            console.log("s");
+        }
+        function han() {
+            var m = new Audio("files/hj/12.aac");
+            m.play();
+        }
+        function jian() {
+            var m = new Audio("files/hj/13.aac");
+            m.play();
+        }
+        function aa() {
+            var m = new Audio("files/hj/14.aac");
+            m.play();
+        }
+        function ma() {
+            var m = new Audio("files/hj/21.aac");
+            m.play();
+        }
+        function shui2() {
+            var m = new Audio("files/hj/22.aac");
+            m.play();
+        }
+        function han2() {
+            var m = new Audio("files/hj/23.aac");
+            m.play();
+        }
+        function jian2() {
+            var m = new Audio("files/hj/24.aac");
+            m.play();
+        }
+        function xiqi() {
+            var m = new Audio("files/hj/31.aac");
+            m.play();
+        }
+        function ma3() {
+            var m = new Audio("files/hj/41.aac");
+            m.play();
+        }
+        function shui3() {
+            var m = new Audio("files/hj/42.aac");
+            m.play();
+        }
+        function han3() {
+            var m = new Audio("files/hj/43.aac");
+            m.play();
+        }
+        function jian3() {
+            var m = new Audio("files/hj/44.aac");
+            m.play();
+        }
+        function nzmszha() {
+            var m = new Audio("files/pulegehe/1.m4a");
+            m.play();
+            console.log("zh");
+        }
+        function wsnd() {
+            var m = new Audio("files/hj/91.aac");
+            m.play();
+        }
+        function wcnm() {
+            var m = new Audio("files/hj/51.aac");
+            m.play();
+        }
+        function cnm() {
+            var m = new Audio("files/hj/61.aac");
+            m.play();
+        }
+        function sb() {
+            var m = new Audio("files/hj/71.aac");
+            m.play();
+        }
+        function qsb() {
+            var m = new Audio("files/hj/81.aac");
+            m.play();
+        }
+        function wcnmcd() {
+            var m = new Audio("files/hj/101.aac");
+            m.play();
+        }
+        function nddbrslsb() {
+            var m = new Audio("files/hj/111.aac");
+            m.play();
+        }
+        function shxlz() {
+            var m = new Audio("files/pulegehe/2.m4a");
+            m.play();
+        }
+        function sdsmjbh() {
+            var m = new Audio("files/hj/121.aac");
+            m.play();
+        }
+        function xgdy() {
+            var m = new Audio("files/hj/131.aac");
+            m.play();
+        }
+        function gj1() {
+            var m = new Audio("files/hj/132.aac");
+            m.play();
+        }
+        function gj2() {
+            var m = new Audio("files/hj/133.aac");
+            m.play();
+        }
+        function xx() {
+            var m = new Audio("files/hj/134.aac");
+            m.play();
+        }
+        function gj3() {
+            var m = new Audio("files/hj/141.aac");
+            m.play();
+        }
+        function gj4() {
+            var m = new Audio("files/hj/142.aac");
+            m.play();
+        }
+        function gj5() {
+            var m = new Audio("files/hj/143.aac");
+            m.play();
+        }
+        function gj6() {
+            var m = new Audio("files/hj/144.aac");
+            m.play();
+        }
+        function gj7() {
+            var m = new Audio("files/hj/151.aac");
+            m.play();
+        }
+        function gj8() {
+            var m = new Audio("files/hj/152.aac");
+            m.play();
+        }
+        function gj9() {
+            var m = new Audio("files/hj/153.aac");
+            m.play();
+        }
+        function jma() {
+            var m = new Audio("files/pulegehe/3.m4a");
+            m.play();
+        }
+        function hta() {
+            var m = new Audio("files/pulegehe/4.m4a");
+            m.play();
+        }
+        function apsma() {
+            var m = new Audio("files/pulegehe/5.m4a");
+            m.play();
+        }
+        function njbsa() {
+            var m = new Audio("files/pulegehe/6.m4a");
+            m.play();
+        }
+        function bbzl() {
+            var m = new Audio("files/pulegehe/7.m4a");
+            m.play();
+        }
+        function fla() {
+            var m = new Audio("files/pulegehe/8.m4a");
+            m.play();
+        }
+        function nta() {
+            var m = new Audio("files/pulegehe/9.m4a");
+            m.play();
+        }
+        function dddy() {
+            var m = new Audio("files/pulegehe/10.m4a");
+            m.play();
+        }
+        function hhyqlbs() {
+            var m = new Audio("files/pulegehe/11.m4a");
+            m.play();
+        }
+        function odbq() {
+            var m = new Audio("files/pulegehe/12.m4a");
+            m.play();
+        }
+        function wgbhmmb() {
+            var m = new Audio("files/pulegehe/13.m4a");
+            m.play();
+        }
+        function nwmn() {
+            var m = new Audio("files/pulegehe/14.m4a");
+            m.play();
+        }
+        function njbsawc() {
+            var m = new Audio("files/pulegehe/15.m4a");
+            m.play();
+        }
+        function nsbsymb() {
+            var m = new Audio("files/pulegehe/16.m4a");
+            m.play();
+        }
+        function dxlsmjb() {
+            var m = new Audio("files/pulegehe/17.m4a");
+            m.play();
+        }
+        function hhnh() {
+            var m = new Audio("files/pulegehe/18.m4a");
+            m.play();
+        }
+        function aaanhfaaa() {
+            var m = new Audio("files/pulegehe/19.m4a");
+            m.play();
+        }
+        function wdxl() {
+            var m = new Audio("files/pulegehe/20.m4a");
+            m.play();
+        }
+        function kbjx() {
+            var m = new Audio("files/pulegehe/21.m4a");
+            m.play();
+        }
+        function lllxgy() {
+            var m = new Audio("files/pulegehe/22.m4a");
+            m.play();
+        }
+        function nzcyd() {
+            var m = new Audio("files/pulegehe/23.m4a");
+            m.play();
+        }
+        function wwwbxblwww() {
+            var m = new Audio("files/pulegehe/24.m4a");
+            m.play();
+        }
+        function wwwwwww() {
+            var m = new Audio("files/pulegehe/25.m4a");
+            m.play();
+        }
+        function wwwwwwx() {
+            var m = new Audio("files/pulegehe/26.m4a");
+            m.play();
+        }
+        function xxl() {
+            var m = new Audio("files/pulegehe/27.m4a");
+            m.play();
+        }
+        function wbsq() {
+            var m = new Audio("files/pulegehe/28.m4a");
+            m.play();
+        }
+        function wthjda() {
+            var m = new Audio("files/hj/191.aac");
+            m.play();
+        }
+        function wqshj() {
+            var m = new Audio("files/hj/201.aac");
+            m.play();
+        }
+        function wsg() {
+            var m = new Audio("files/hj/181.aac");
+            m.play();
+        }
+        function wwwhorror() {
+            var m = new Audio("files/hj/221.aac");
+            m.play();
+        }
+        function wmtyqs() {
+            var m = new Audio("files/hj/161.aac");
+            m.play();
+        }
+        function whtyjh() {
+            var m = new Audio("files/hj/171.aac");
+            m.play();
+        }
+        function nmdndyzzkx() {
+            var m = new Audio("files/hj/211.aac");
+            m.play();
+        }
+        var imgNum = 0;
+        function me() {
+            if (imgNum < 9) {
+                imgNum = imgNum + 1;
+            }
+            else {
+                document.getElementById("me").style.display = "block";
+                var httpRequest = new XMLHttpRequest();
+                httpRequest.open('GET', 'http://api.darock.top/total/hjboxwebee', true);
+                httpRequest.send();
+            }
+        }
+        function support() {
+            window.location.href = "/hanjian/support_main.html";
+        }
+    </script>
+</body>
+</html>

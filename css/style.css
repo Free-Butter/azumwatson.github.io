@@ -1,0 +1,115 @@
+* {
+        box-sizing: border-box;
+        }
+
+      body {
+        font-family: "Mhyfont";
+      }
+
+button {
+  background-color: #66ccff;
+  border: 2px solid #4CAF50;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.user-info {
+  position: relative;
+  top: 160px;
+  left: 70px;
+  border: 1px solid #7e7e7e;
+  max-width: 500px;
+}
+
+.notice {
+    background-color: #fef7ed;
+    border: 2px dashed #fce9ca;
+    border-radius: 4px;
+}
+
+.notice-span {
+    padding: 5px 15px 5px 15px;
+    font-size: 14px;
+}
+
+.n-base-icon {
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    fill: #f0a020;
+    transform: translateZ(0);
+}
+
+    .n-base-icon svg {
+        height: 1.6em;
+        width: 1.6em;
+    }
+
+.n-alert .n-alert__icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: var(--n-icon-size);
+    height: var(--n-icon-size);
+    font-size: var(--n-icon-size);
+    margin: var(--n-icon-margin);
+}
+
+      #website-title {
+        font-size: 20px;
+      }
+
+      #weblink {
+        background-color: #66CCFF;
+        text-decoration: none;
+        color: white;
+        border:2px solid #66ccff;
+        border-radius: 6px;
+        transition-duration: 0.4s;
+      }
+
+      #weblink:hover {
+        background-color: white;
+        text-decoration: none;
+        color: black;
+        border:2px solid #66ccff;
+        border-radius: 6px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+
+      #beian {
+        text-decoration: none;
+      }
+
+      #subtitle {
+        font-size: 18px;
+	color: rgb(211, 188, 142);
+      }
+
+      #ms-bkgdpng {
+        background-position: center;
+	  background-repeat: no-repeat;
+        background-image: url(../ms/file/img/47f71d4.jpg);
+        width: 250px;
+	  height: 200px;
+        background-attachment: scroll;
+      }      
